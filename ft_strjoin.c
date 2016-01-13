@@ -6,7 +6,7 @@
 /*   By: vbridier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/06 17:13:24 by vbridier          #+#    #+#             */
-/*   Updated: 2016/01/12 12:22:57 by vbridier         ###   ########.fr       */
+/*   Updated: 2016/01/13 14:21:45 by vbridier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	char	*str;
 	int		i;
 
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
 	i = 0;
 	if (!(str = ft_strnew(sizeof(char) * (ft_strlen(s1) + ft_strlen(s2)))))
 		return (NULL);

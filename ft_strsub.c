@@ -6,7 +6,7 @@
 /*   By: vbridier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/06 16:58:49 by vbridier          #+#    #+#             */
-/*   Updated: 2016/01/12 12:25:12 by vbridier         ###   ########.fr       */
+/*   Updated: 2016/01/13 13:36:22 by vbridier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 	int		i;
 
 	i = 0;
+	if (s == NULL)
+		return (NULL);
 	if (!(str = ft_strnew(len)))
 		return (NULL);
 	while (len--)

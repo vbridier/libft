@@ -6,7 +6,7 @@
 /*   By: vbridier <vbridier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/08 17:48:08 by vbridier          #+#    #+#             */
-/*   Updated: 2016/01/12 12:24:49 by vbridier         ###   ########.fr       */
+/*   Updated: 2016/01/13 14:24:13 by vbridier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char			**ft_strsplit(char const *s, char c)
 	int		i;
 	int		len;
 
+	if (s == NULL)
+		return (NULL);
 	tab = (char **)ft_memalloc(sizeof(char*) * ft_strlen(s));
 	if (!tab)
 		return (NULL);

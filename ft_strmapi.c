@@ -6,7 +6,7 @@
 /*   By: vbridier <vbridier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/06 13:04:25 by vbridier          #+#    #+#             */
-/*   Updated: 2016/01/12 12:23:26 by vbridier         ###   ########.fr       */
+/*   Updated: 2016/01/13 14:06:12 by vbridier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char	*s2;
 
 	i = 0;
+	if (s == NULL)
+		return (NULL);
 	if (!(s2 = ft_strnew(ft_strlen(s))))
 		return (NULL);
 	while (s[i])

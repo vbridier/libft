@@ -6,7 +6,7 @@
 /*   By: vbridier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/07 13:45:54 by vbridier          #+#    #+#             */
-/*   Updated: 2016/01/12 12:25:24 by vbridier         ###   ########.fr       */
+/*   Updated: 2016/01/13 14:24:48 by vbridier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char			*ft_strtrim(char const *s)
 	char	*str2;
 	int		i;
 
+	if (s == NULL)
+		return (NULL);
 	i = 0;
 	if (!(str = ft_strnew(sizeof(char) * ft_strlen(s))))
 		return (NULL);
