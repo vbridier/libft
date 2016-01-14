@@ -6,7 +6,7 @@
 /*   By: vbridier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/06 11:28:40 by vbridier          #+#    #+#             */
-/*   Updated: 2015/12/06 11:39:09 by vbridier         ###   ########.fr       */
+/*   Updated: 2016/01/14 08:14:07 by vbridier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,7 @@
 
 void	ft_putstr(char const *s)
 {
+	if (s == NULL)
+		return ;
 	write(1, s, ft_strlen(s));
 }

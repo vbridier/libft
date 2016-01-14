@@ -6,7 +6,7 @@
 /*   By: vbridier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/08 12:03:10 by vbridier          #+#    #+#             */
-/*   Updated: 2016/01/12 12:19:26 by vbridier         ###   ########.fr       */
+/*   Updated: 2016/01/14 08:10:27 by vbridier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 void	ft_memdel(void **ap)
 {
+	if (ap == NULL)
+		return ;
 	free(*ap);
 	*ap = NULL;
 }

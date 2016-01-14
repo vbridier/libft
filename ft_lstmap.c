@@ -6,7 +6,7 @@
 /*   By: vbridier <vbridier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/10 20:02:05 by vbridier          #+#    #+#             */
-/*   Updated: 2016/01/12 12:18:14 by vbridier         ###   ########.fr       */
+/*   Updated: 2016/01/14 08:20:55 by vbridier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 	t_list	*fresh;
 	t_list	*end;
 
+	if (lst == NULL || f == NULL)
+		return (NULL);
 	fresh = f(lst);
 	end = fresh;
 	while (lst->next)
