@@ -57,3 +57,9 @@ Fonctions supplémentaires :
 - ft_putnbr_fd
 
 Fonctions bonus : 
+- ft_lstnew
+- ft_lstdelone
+- ft_lstdel
+- ft_lstadd
+- ft_lstiter
+- ft_lstmap
