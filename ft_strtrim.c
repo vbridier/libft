@@ -6,7 +6,7 @@
 /*   By: vbridier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/07 13:45:54 by vbridier          #+#    #+#             */
-/*   Updated: 2016/01/14 08:01:48 by vbridier         ###   ########.fr       */
+/*   Updated: 2016/01/19 20:24:20 by vbridier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,7 @@ char			*ft_strtrim(char const *s)
 		i--;
 	if (!(str2 = ft_strnew(sizeof(char) * i)))
 		return (NULL);
+	str2[i] = '\0';
 	while (*str)
 		str2[--i] = *str--;
 	return (str2);
