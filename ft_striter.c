@@ -6,14 +6,14 @@
 /*   By: vbridier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/08 12:51:28 by vbridier          #+#    #+#             */
-/*   Updated: 2016/01/13 14:15:38 by vbridier         ###   ########.fr       */
+/*   Updated: 2016/01/21 10:53:46 by vbridier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_striter(char *s, void (*f)(char *))
-{	
+{
 	if (s == NULL || f == NULL)
 		return ;
 	while (*s)

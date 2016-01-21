@@ -6,14 +6,14 @@
 /*   By: vbridier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/06 16:51:31 by vbridier          #+#    #+#             */
-/*   Updated: 2016/01/13 14:03:12 by vbridier         ###   ########.fr       */
+/*   Updated: 2016/01/21 10:53:34 by vbridier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int	ft_strequ(char const *s1, char const *s2)
-{	
+{
 	if (s1 == NULL || s2 == NULL)
 		return (0);
 	return ((ft_strcmp(s1, s2) != 0 ? 0 : 1));
