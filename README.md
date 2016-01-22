@@ -63,3 +63,10 @@ Fonctions bonus :
 - ft_lstadd
 - ft_lstiter
 - ft_lstmap
+
+Fonctions personnelles :
+- ft_islower
+- ft_isupper
+- ft_iswhitespace
+- ft_nbrlen
+- ft_wd_len
